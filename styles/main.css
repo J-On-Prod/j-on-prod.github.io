@@ -1,32 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 html, body {
     margin: 0;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
 h1 {
-    color: blue;
+    color: rgb(103, 208, 243);
+    margin: 0;
+    font-size: 5vw;
 }
 
-.icon-social, .bt-country {
-    height: 20px;
-    width: auto;
+header h2 {
+    font-size: 3vw;
 }
+
+header span {
+    font-size: 2vw;
+}
+
+span.punch-line {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
 
 nav {
-    display: flex;
+    display: none;
     gap: 10px;
     justify-content: flex-end;
-    display: none;
+}
+
+.nav-element {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
 }
 
 header {
+    display: grid;
     background-image: url("../media/image/backgrounds/navy-blue-fluid-painting-d0x1q0mcxqzzzanx.jpg");
-    color: whitesmoke;
     min-height: 100%;
+}
+
+header, header a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#header-left {
+    grid-column: 1 /6;
+    grid-row: 1;
+    text-align: right;
+    margin-right: 8%;
+    margin-top: 20%;
+}
+
+#header-right {
+    display: inline-block;
+    grid-column: 6/ 12;
+    grid-row: 1;
+    background-color: rgba(220, 220, 220, 0.3);
+    padding-left: 8%;
+    padding-top: 20%;
+    border-left: rgba(220, 220, 220, 0.75) 3px solid;
 }
 
 .lang-element {
     display: flex;
     gap: 10px;
+}
+
+.bt-country, .icon-nav {
+    height: 20px;
+    width: auto;
+}
+
+.icon-social {
+    height: 50px;
+    width: auto;
 }
 
 .no-dot {
