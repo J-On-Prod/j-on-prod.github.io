@@ -7,17 +7,21 @@ html, body {
     font-family: 'Lato', sans-serif;
 }
 
+p, a {
+    font-size: 0.8vw;
+}
+
 h1 {
     color: rgb(103, 208, 243);
     margin: 0;
     font-size: 5vw;
 }
 
-header h2 {
-    font-size: 3vw;
+h2 {
+    font-size: 2.5vw;
 }
 
-header span {
+header span, h3 {
     font-size: 2vw;
 }
 
@@ -29,14 +33,15 @@ span.punch-line {
 
 nav {
     display: none;
-    gap: 10px;
+    gap: 0.5vw;
     justify-content: flex-end;
 }
 
 .nav-element {
     display: flex;
     align-items: baseline;
-    gap: 10px;
+    gap: 0.5vw;
+    font-size: 0.8vw;
 }
 
 header {
@@ -64,8 +69,23 @@ header, header a {
     grid-row: 1;
     background-color: rgba(220, 220, 220, 0.3);
     padding-left: 8%;
-    padding-top: 20%;
+    padding-top: 45%;
     border-left: rgba(220, 220, 220, 0.75) 3px solid;
+}
+
+section {
+    padding: 1vw 10vw;
+    background-color: lightblue;
+}
+
+.experiences-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#projects ul li {
+    list-style-type: none;
 }
 
 .lang-element {
@@ -74,12 +94,12 @@ header, header a {
 }
 
 .bt-country, .icon-nav {
-    height: 20px;
+    height: 1vw;
     width: auto;
 }
 
 .icon-social {
-    height: 50px;
+    height: 3vw;
     width: auto;
 }
 
@@ -87,4 +107,23 @@ header, header a {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.bt-primary {
+    display: inline-block;
+    background-color: cornflowerblue;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.social-container {
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+/* Gerer les écrans etroits */
+@media screen {
+    
 }
