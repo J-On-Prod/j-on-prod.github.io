@@ -29,8 +29,6 @@ span.punch-line {
     font-family: 'Cormorant Garamond', serif;
 }
 
-
-
 nav {
     display: none;
     gap: 0.5vw;
@@ -79,13 +77,44 @@ section {
 }
 
 .experiences-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: space-evenly;
 }
 
 #projects ul li {
     list-style-type: none;
+}
+
+#title-work {
+    grid-area: 1 / 1;
+}
+
+#title-education {
+    grid-area: 1 / 2;
+}
+
+#title-traning-period {
+    grid-area: 1 / 3;
+}
+
+#floreale-holding-work {
+    grid-area: 2 / 1;
+}
+
+#caen-bachelor-info {
+    grid-area: 4 / 2;
+}
+
+#lomme-bts-info {
+    grid-area: 5 / 2;
+}
+
+#floreale-holding-traning {
+    grid-area: 3 / 3;
+}
+
+#maison-des-travaux-traning {
+    grid-area: 6 / 3;
 }
 
 .lang-element {
@@ -112,8 +141,8 @@ section {
 .bt-primary {
     display: inline-block;
     background-color: cornflowerblue;
-    padding: 1vw;
-    border-radius: 1vw;
+    padding: 0.5vw 1.2vw;
+    border-radius: 100px;
     font-size: max(1.1vw, 12px);
     font-weight: 600;
 }
