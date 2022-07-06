@@ -90,6 +90,10 @@ section {
     background-color: lightblue;
 }
 
+.warning {
+    color: orangered;
+}
+
 .experiences-container {
     display: grid;
     justify-content: space-evenly;
