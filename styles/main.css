@@ -21,6 +21,14 @@ h2 {
     font-size: max(2.5vw, 20px);
 }
 
+#intro-web {
+    margin-bottom: 0;
+}
+
+#intro-frontend {
+    margin-top: 0;
+}
+
 header span, h3 {
     font-size: max(2vw, 17px);
 }
@@ -29,8 +37,10 @@ h4 {
     font-size: max(1.7vw, 15px);
 }
 
-span.punch-line {
+.punch-line {
     font-family: 'Cormorant Garamond', serif;
+    font-size: max(1.5vw, 14px);
+    margin: 4vh 0;
 }
 
 nav {
@@ -80,14 +90,19 @@ section {
     background-color: lightblue;
 }
 
-.skill-container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .experiences-container {
     display: grid;
     justify-content: space-evenly;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skill-container div {
+    width: 300px;
 }
 
 .skill-container li {
@@ -96,6 +111,11 @@ section {
 
 .skill-container ul {
     padding: 0;
+}
+
+.icon-skills li img {
+    height: max(1.5vw, 12px);
+    width: auto;
 }
 
 #projects ul li {
@@ -157,6 +177,10 @@ section {
 
 #maison-des-travaux-type {
     grid-area: 6 / 3;
+}
+
+.flex-project {
+    display: flex;
 }
 
 .lang-element {

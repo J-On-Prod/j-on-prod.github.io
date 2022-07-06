@@ -51,8 +51,9 @@
         <!-- Voir pour cree un fond liquide avec Js -->
         <div id="header-left">
             <h1>Jonathan DURAND</h1>
-            <h2>Web Developer (Frontend)</h2>
-            <span class="punch-line">Creating allows me to go beyond what I can imagine</span>
+            <h2 id="intro-web">Web Developer</h2>
+            <h3 id="intro-frontend">Frontend</h3>
+            <p class="punch-line">Creating allows me to go beyond what I can imagine</p>
         </div>
         <div id="header-right">
             <ul class="no-dot">
@@ -100,32 +101,33 @@
                     <div class="skill-container">
                         <div id="prog-master">
                             <h4>Master</h4>
-                            <ul>
-                                <li>HTML, CSS, Js</li>
-                                <li>Java</li>
-                                <li>JSF</li>
-                                <li>Python</li>
-                                <li>SQL</li>
+                            <ul class="icon-skills">
+                                <li><img src="media/image/prog/logo-javascript.png" alt="">HTML, CSS, JS, AJAX</li>
+                                <li><img src="media/image/prog/Java_Logo.svg" alt="">Java / JSF</li>
+                                <li><img src="media/image/prog/Python-logo-notext.svg" alt="">Python</li>
+                                <li><img src="media/image/prog/sql.png" alt="" srcset="">SQL</li>
                             </ul>
                         </div>
                         <div id="prog-acquired">
                             <h4>Acquired</h4>
-                            <ul>
-                                <li>PHP</li>
-                                <li>Angular</li>
-                                <li>Android (Java)</li>
-                                <li>Git</li>
-                                <li>Bash</li>
-                                <li>C</li>
-                                <li>Basic (Rocket Univers)</li>
+                            <ul class="icon-skills">
+                                <li><img src="media/image/prog/PHP-logo.svg" alt="">PHP</li>
+                                <li><img src="media/image/prog/Angular_full_color_logo.svg" alt="">Angular</li>
+                                <li><img src="media/image/prog/Android_robot.svg" alt="">Android (Java)</li>
+                                <li><img src="media/image/prog/Git_icon.svg" alt="">Git</li>
+                                <li><img src="media/image/prog/Bash_Logo_Colored.svg" alt="">Bash</li>
+                                <li><img src="media/image/prog/C_Programming_Language.svg" alt="">C</li>
+                                <li><img src="media/image/prog/rocket.png" alt="">Basic (Rocket Univers)</li>
                             </ul>
                         </div>
                         <div id="prog-bases">
                             <h4>Bases</h4>
-                            <ul>
-                                <li>Powershell</li>
-                                <li>Haskell</li>
-                                <li>Prolog</li>
+                            <ul class="icon-skills">
+                                <li><img src="media/image/prog/PowerShell_5.0_icon.png" alt="">Powershell</li>
+                                <li><img src="media/image/prog/Node.js_logo_2015.svg" alt="">NodeJS</li>
+                                <li><img src="media/image/general/" alt="">Visual BASIC</li>
+                                <li><img src="media/image/prog/Haskell-Logo.svg" alt="">Haskell</li>
+                                <li><img src="media/image/prog/prolog-458170.webp" alt="">Prolog</li>
                             </ul>
                         </div>
                     </div>
@@ -134,24 +136,23 @@
                 <div id="general-skills">
                     <h3>General Skills</h3>
                     <div class="skill-container">
-                        <ul>
-                            <li>Suite Office</li>
-                            <li>Gimp / Photoshop</li>
-                            <li>AutoCAD</li>
-                            <li>Visual BASIC</li>
-                            <li>Anglais (B2)</li>
+                        <ul class="icon-skills">
+                            <li><img src="media/image/general/Microsoft_Office_logo_(2013–2019).svg" alt="">Suite Office</li>
+                            <li><img src="media/image/general/Adobe_Photoshop_CC_icon.svg" alt="">Gimp / Photoshop</li>
+                            <li><img src="media/image/general/AutoCad_logo.svg" alt="">AutoCAD</li>
+                            <li><img src="media/image/lang/Flag_of_the_United_Kingdom.svg" alt="">Anglais (B2)</li>
                         </ul>
                     </div>
                 </div>
                 <div id="hobbies">
                     <h3>Other Activities & Hobbies</h3>
                     <div class="skill-container">
-                        <ul>
-                            <li>Composition and Musical Mixing</li>
-                            <li>Natation</li>
-                            <li>Travel</li>
-                            <li>Films</li>
-                            <li>Bike</li>
+                        <ul class="icon-skills">
+                            <li><img src="media/image/hobbies/Simple_Music.svg" alt=""> Composition and Musical Mixing</li>
+                            <li><img src="media/image/hobbies/Icone_natation.svg" alt=""> Natation</li>
+                            <li><img src="media/image/hobbies/Noun_15537_ccElliotVerhaeren_travel.svg" alt=""> Travel</li>
+                            <li><img src="media/image/hobbies/Film_reel.svg" alt=""> Films</li>
+                            <li><img src="media/image/hobbies/Bicycle-Silhouette.svg" alt=""> Bike</li>
                         </ul>
                     </div>
                 </div>
@@ -214,6 +215,7 @@
             <h2>Projects</h2>
             <div id="my-projects">
                 <h3>My own Projects</h3>
+                <div class="flex-project"></div>
                 <ul>
                     <li>
                         <a href="https://github.com/J-On-Prod/PokerTimer">
@@ -223,46 +225,73 @@
                     </li>
                 </ul>
             </div>
-            <div id="floreale-holding-projects">
+            <div id="floreale-holding-projects" >
                 <h3>Floreale Holding</h3>
-                <ul>
-                    <li>
-                        <a href="">
-                            <p>Function call visualization and code visualization tool (Front & Backend)</p>
-                            <p>Java/JSF and Primefaces Framework, SQL And Program for give data informations (Via Rocket Universe)</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Development of a web ERP under Angular with a proprietary framework (Front & Backend)</p>
-                            <p>Angular (proprietary framework), RFL (proprietary API tool develop on Rocket Universe by InfoDATA)</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Development of a web ERP using Java/JSF and Primefaces Framework (Front & Backend)</p>
-                            <p>Java/JSF and Primefaces Framework (Front & Backend), SQL (Via Rocket Universe)</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Development of an ERP with Rocket Universe and System Builder</p>
-                            <p>Rocket Universe, Rocket System Builder</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Extraction and formatting of data for accounting</p>
-                            <p>Java, SQL (Via Rocket Universe)</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p>Creation of a Sharepoint site for the documentation, creation of illustrations for the buttons with Gimp</p>
-                            <p>Sharepoint, Gimp</p>
-                        </a>
-                    </li>
-                </ul>
+                <div class="flex-project">
+                    <ul>
+                        <li>
+                            <div class="box-project">
+                                <p>Function call visualizer</p>
+                                <div class="prog-container">
+
+                                </div>
+                                <!-- <p>Function call visualization and code visualization tool (Front & Backend)</p> 
+                                <p>Java/JSF and Primefaces Framework, SQL And Program for give data informations (Via Rocket Universe)</p>-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-project">
+                                <p>ERP on Angular</p>
+                                <div class="prog-container">
+
+                                </div>
+                                <!--<p>Development of a web ERP under Angular with a proprietary framework (Front & Backend)</p>
+                                <p>Angular (proprietary framework), RFL (proprietary API tool develop on Rocket Universe by InfoDATA)</p>-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-project">
+                                <p>ERP on Java/JSF</p>
+                                <div class="prog-container">
+
+                                </div>
+                            </div>
+                            <!--<p>Development of a web ERP using Java/JSF and Primefaces Framework (Front & Backend)</p>
+                            <p>Java/JSF and Primefaces Framework (Front & Backend), SQL (Via Rocket Universe)</p>-->
+                        </li>
+                        <li>
+                            <div class="box-project">
+                                <p>ERP on Rocket Universe / SB</p>
+                                <div class="prog-container">
+
+                                </div>
+                                <!--<p>Development of an ERP with Rocket Universe and System Builder</p>
+                                <p>Rocket Universe, Rocket System Builder</p>-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-project">
+                                <p>Extraction data for accounting</p>
+                                <div class="prog-container">
+
+                                </div>
+                                <!--<p>Extraction and formatting of data for accounting</p>
+                                <p>Java, SQL (Via Rocket Universe)</p>-->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-project">
+                                <p>Sharepoint site</p>
+                                <div class="prog-container">
+
+                                </div>
+                                <!--<p>Creation of a Sharepoint site for host intermal documentation, creation of illustrations for the buttons with Gimp</p>
+                                <p>Sharepoint, Gimp</p>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
             <div id=""></div>
         </article>
@@ -278,22 +307,22 @@
                 <div class="social-container">
                     <a href="" id="facebook">
                         <div>
-                            <img src="media/image/Facebook_F_icon.svg" alt="facebook"  class="icon-social">
+                            <img src="media/image/social/Facebook_F_icon.svg" alt="facebook"  class="icon-social">
                         </div>
                     </a>
                     <a href="" id="twitter">
                         <div >
-                            <img src="media/image/Twitter_Bird.svg" alt="twitter"  class="icon-social">
+                            <img src="media/image/social/Twitter_Bird.svg" alt="twitter"  class="icon-social">
                         </div>
                     </a>
                     <a href="" id="linkedin">
                         <div>
-                            <img src="media/image/LinkedIn_Logo.svg" alt="linkedin"  class="icon-social">
+                            <img src="media/image/social/LinkedIn_Logo.svg" alt="linkedin"  class="icon-social">
                         </div>
                     </a>
-                    <a href="" id="github">
+                    <a href="https://github.com/J-On-Prod" id="github">
                         <div>
-                            <img src="media/image/Octicons-mark-github.svg" alt="github"  class="icon-social">
+                            <img src="media/image/social/Octicons-mark-github.svg" alt="github"  class="icon-social">
                         </div>
                     </a>
                 </div>
@@ -303,10 +332,10 @@
     <footer>
         <ul class="lang-element no-dot">
             <li>
-                <img src="media/image/Flag_of_France.svg" alt="FR" class="bt-country">
+                <img src="media/image/lang/Flag_of_France.svg" alt="FR" class="bt-country">
             </li>
             <li>
-                <img src="media/image/Flag_of_the_United_Kingdom.svg" alt="EN" class="bt-country">
+                <img src="media/image/lang/Flag_of_the_United_Kingdom.svg" alt="EN" class="bt-country">
             </li>
         </ul>
     </footer>
