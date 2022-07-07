@@ -145,6 +145,12 @@ section {
 
 /* GRID ELEMENTS */
 
+#experiences {
+    background-color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
 .experiences-container {
     display: grid;
     justify-content: center;
@@ -178,7 +184,7 @@ section {
     height: 43vh;
     width: 6px;
     margin: 0 auto;
-    background: linear-gradient(rgb(213, 255, 219), rgb(249, 255, 214), rgb(249, 255, 214), rgb(210, 239, 250));
+    background: linear-gradient(rgb(213, 255, 219) 30%, rgb(249, 255, 214), rgb(210, 239, 250) 95%);
     grid-area: 1/2;
 }
 
