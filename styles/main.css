@@ -188,7 +188,7 @@ section {
     height: 43vh;
     width: 6px;
     margin: 0 auto;
-    background: linear-gradient(rgb(213, 255, 219) 30%, rgb(249, 255, 214), rgb(210, 239, 250) 95%);
+    background: linear-gradient(rgba(213, 255, 219, 0) 0%, rgb(213, 255, 219) 30%, rgb(249, 255, 214) 40%, rgb(249, 255, 214) 85%, rgb(210, 239, 250) 95%);
     grid-area: 1/2;
 }
 
