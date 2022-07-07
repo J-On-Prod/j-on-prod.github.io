@@ -86,8 +86,12 @@ header, header a {
 }
 
 section {
-    padding: 1vw 10vw;
+    padding: 1vw 0;
     background-color: lightblue;
+}
+
+.no-sticky-border {
+    padding: 0 10vw;
 }
 
 .warning {
@@ -124,7 +128,8 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 3vw;
+    padding: 3vh 0;
+    margin: 3vh 0;
 }
 
 #programming-skills .icon-skills {
