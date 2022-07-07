@@ -58,7 +58,7 @@ nav {
 
 header {
     display: grid;
-    background-image: url("../media/image/backgrounds/navy-blue-fluid-painting-d0x1q0mcxqzzzanx.jpg");
+    background-image: url("../media/image/backgrounds/navy-blue-fluid-painting-d0x1q0mcxqzzzanx.webp");
     min-height: 100%;
 }
 
@@ -94,11 +94,6 @@ section {
     color: orangered;
 }
 
-.experiences-container {
-    display: grid;
-    justify-content: space-evenly;
-}
-
 .skill-container {
     display: flex;
     justify-content: space-evenly;
@@ -113,28 +108,81 @@ section {
     list-style-type: none;
 }
 
-.skill-container ul {
-    padding: 0;
+.icon-skills {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 300px;
 }
 
-.icon-skills li img {
+.icon-skills img {
     height: max(1.5vw, 12px);
     width: auto;
+}
+
+#programming-skills {
+    background-image: url("../media/image/backgrounds/shahadat-rahman-BfrQnKBulYQ-unsplash.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 3vw;
+}
+
+#programming-skills .icon-skills {
+    background-color: rgba(240, 240, 240, 0.9);
+    color: black;
+    padding: 1vw;
+    border-radius: 2vw;
 }
 
 #projects ul li {
     list-style-type: none;
 }
 
-#title-activity {
-    grid-area: 1 / 2;
+/* GRID ELEMENTS */
+
+.experiences-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr 4fr 3fr;
+    grid-template-rows: repeat(4, 10vh);
+}
+.experiences-container div {
 }
 
-#title-type {
+
+.logo-places {
+    display: flex;
+    background: whitesmoke;
+    border-radius: 4vh;
+    padding: 1vh;
+    width: max(2.5vw, 16px);
+    height: max(2.5vw, 16px);
+}
+
+.logo-places img {
+    width: max(2.5vw, 16px);
+    align-self: center;
+    justify-self: center;
+}
+
+.border-experience {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#title-activity {
     grid-area: 1 / 3;
 }
 
+#title-type {
+    grid-area: 1 / 4;
+}
+
 #floreale-holding-name {
+    grid-area: 2 / 3;
+}
+
+#floreale-holding-logo {
     grid-area: 2 / 2;
 }
 
@@ -143,44 +191,55 @@ section {
 }
 
 #floreale-holding-type {
-    grid-area: 2 / 3;
+    grid-area: 2 / 4;
 }
 
 #caen-bachelor-name {
-    grid-area: 4 / 2;
+    grid-area: 3 / 3;
+}
+
+#caen-bachelor-logo {
+    grid-area: 3 / 2;
 }
 
 #caen-bachelor-period {
-    grid-area: 4 / 1;
+    grid-area: 3 / 1;
 }
 
 #caen-bachelor-type {
+    grid-area: 3 / 4;
+}
+
+#lomme-bts-name {
     grid-area: 4 / 3;
 }
 
-
-#lomme-bts-name {
-    grid-area: 5 / 2;
+#lomme-bts-logo {
+    grid-area: 4 / 2;
 }
 
 #lomme-bts-period {
-    grid-area: 5 / 1;
+    grid-area: 4 / 1;
 }
 
 #lomme-bts-type {
-    grid-area: 5 / 3;
+    grid-area: 4 / 4;
 }
 
 #maison-des-travaux-name {
-    grid-area: 6 / 2;
+    grid-area: 5 / 3;
+}
+
+#maison-des-travaux-logo {
+    grid-area: 5 / 2;
 }
 
 #maison-des-travaux-period {
-    grid-area: 6 / 1;
+    grid-area: 5 / 1;
 }
 
 #maison-des-travaux-type {
-    grid-area: 6 / 3;
+    grid-area: 5 / 4;
 }
 
 .flex-project {
