@@ -11,33 +11,26 @@
 </head>
 <body>
     <nav>
-        <ul class="no-dot smooth-scroll">
-            <li>
-                <a href="#about-me">
-                    <div class="nav-element">
-                        <img src="media/image/me.svg" alt="about me" class="icon-nav">
-                        <p>About Me</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#projects">
-                    <div class="nav-element">
-                        <img src="media/image/Noun_Project_projects_icon_1327109_cc.svg" alt="projects" class="icon-nav">
-                        <p>Projects</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    <div class="nav-element">
-                        <img src="media/image/Telephone_receiver.svg" alt="contact" class="icon-nav">
-                        <p>Contact me</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <ul class="lang-element">
+        <h4>Jonathan DURAND</h4>
+        <a href="#about-me">
+            <div class="nav-element">
+                <img src="media/image/me.svg" alt="about me" class="icon-nav">
+                <p>About Me</p>
+            </div>
+        </a>
+        <a href="#projects">
+            <div class="nav-element">
+                <img src="media/image/Noun_Project_projects_icon_1327109_cc.svg" alt="projects" class="icon-nav">
+                <p>Projects</p>
+            </div>
+        </a>
+        <a href="#contact">
+            <div class="nav-element">
+                <img src="media/image/Telephone_receiver.svg" alt="contact" class="icon-nav">
+                <p>Contact me</p>
+            </div>
+        </a>
+        <ul class="lang-element no-dot">
             <li>
                 <img src="media/image/lang/Flag_of_France.svg" alt="FR" class="bt-country">
             </li>
@@ -95,7 +88,7 @@
                 <p></p>
             </div>
             <div id="skills">
-                <div id="programming-skills">
+                <div id="programming-skills" class="reveal">
                     <h3 class="no-sticky-border">Programming Skills</h3>
                     <div class="skill-container no-sticky-border">
                         <div id="prog-master">
@@ -148,40 +141,42 @@
                     </div>
                     
                 </div>
-                <div id="general-skills" class="no-sticky-border">
-                    <h3>General Skills</h3>
-                    <div class="skill-container">
-                        <div class="icon-skills">
-                            <img src="media/image/general/Microsoft_Office_logo_(2013–2019).svg" alt="">
-                            <p>Suite Office</p>
-                            <img src="media/image/general/Adobe_Photoshop_CC_icon.svg" alt="">
-                            <p>Gimp / Photoshop</p>
-                            <img src="media/image/general/AutoCad_logo.svg" alt="">
-                            <p>AutoCAD</p>
-                            <img src="media/image/lang/Flag_of_the_United_Kingdom.svg" alt="">
-                            <p>Anglais (B2)</p>
+                <div id="others-skills" class="no-sticky-border skill-container">
+                    <div id="general-skills">
+                        <h4>General Skills</h4>
+                        <div class="skill-container">
+                            <div class="icon-skills">
+                                <img src="media/image/general/Microsoft_Office_logo_(2013–2019).svg" alt="">
+                                <p>Suite Office</p>
+                                <img src="media/image/general/Adobe_Photoshop_CC_icon.svg" alt="">
+                                <p>Gimp / Photoshop</p>
+                                <img src="media/image/general/AutoCad_logo.svg" alt="">
+                                <p>AutoCAD</p>
+                                <img src="media/image/lang/Flag_of_the_United_Kingdom.svg" alt="">
+                                <p>Anglais (B2)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hobbies">
+                        <h4>Other Activities & Hobbies</h4>
+                        <div class="skill-container">
+                            <div class="icon-skills">
+                                <img src="media/image/hobbies/Simple_Music.svg" alt="">
+                                <p>Composition and Musical Mixing</p>
+                                <img src="media/image/hobbies/Icone_natation.svg" alt="">
+                                <p>Natation</p>
+                                <img src="media/image/hobbies/Noun_15537_ccElliotVerhaeren_travel.svg" alt="">
+                                <p>Travel</p>
+                                <img src="media/image/hobbies/Film_reel.svg" alt="">
+                                <p>Films</p>
+                                <img src="media/image/hobbies/Bicycle-Silhouette.svg" alt="">
+                                <p>Bike</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="hobbies" class="no-sticky-border">
-                    <h3>Other Activities & Hobbies</h3>
-                    <div class="skill-container">
-                        <div class="icon-skills">
-                            <img src="media/image/hobbies/Simple_Music.svg" alt="">
-                            <p>Composition and Musical Mixing</p>
-                            <img src="media/image/hobbies/Icone_natation.svg" alt="">
-                            <p>Natation</p>
-                            <img src="media/image/hobbies/Noun_15537_ccElliotVerhaeren_travel.svg" alt="">
-                            <p>Travel</p>
-                            <img src="media/image/hobbies/Film_reel.svg" alt="">
-                            <p>Films</p>
-                            <img src="media/image/hobbies/Bicycle-Silhouette.svg" alt="">
-                            <p>Bike</p>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div id="experiences" class="no-sticky-border">
+            <div id="experiences" class="no-sticky-border reveal">
                 <h2>Experiences</h2>
                 <div class="experiences-container">
                     <div class="line" id="timeline-experience"></div>
@@ -191,7 +186,7 @@
                     <div id="title-type">
                         <h3>Type</h3>
                     </div>
-                    <div id="floreale-holding-period">
+                    <div id="floreale-holding-period" class="period-experience">
                         <p class="period" >April 2019 - April 2022</p>
                     </div>
                     <div id="floreale-holding-logo" class="logo-places color-work">
@@ -212,7 +207,7 @@
                     <div id="caen-bachelor-logo" class="logo-places color-education">
                         <img src="media/image/places/Logo_Université_de_Caen_Normandie_2018.png" alt="">
                     </div>
-                    <div id="caen-bachelor-period">
+                    <div id="caen-bachelor-period" class="period-experience">
                         <p class="period" >June 2014 - June 2019</p>
                     </div>
                     <div id="caen-bachelor-type"  class="border-experience">
@@ -224,13 +219,13 @@
                     <div id="lomme-bts-name" class="border-experience">
                         <p class="name" >Bachelor's degree in building - Lomme</p>
                     </div>
-                    <div id="lomme-bts-period">
+                    <div id="lomme-bts-period" class="period-experience">
                         <p class="period" >June 2012 - June 2014</p>
                     </div>
                     <div id="lomme-bts-type" class="border-experience">
                         <p class="type" >Studies</p>
                     </div>
-                    <div id="maison-des-travaux-period">
+                    <div id="maison-des-travaux-period" class="period-experience">
                         <p class="period" >May 2013 - June 2013</p>
                     </div>
                     <div id="maison-des-travaux-logo" class="logo-places color-training">
@@ -249,89 +244,99 @@
             <h2>Projects</h2>
             <div id="my-projects">
                 <h3>My own Projects</h3>
-                <div class="flex-project"></div>
-                <ul>
-                    <li>
-                        <a href="https://github.com/J-On-Prod/PokerTimer">
-                            <p>PokerTimer</p>
-                            <div class="prog-container">
-
-                            </div>
-                            <!-- <p>PokerTimer - Poker Tournament Preparation Tool</p> -->
-                            <!-- <p>Android - Java</p> -->
-                        </a>
-                    </li>
-                </ul>
+                <div class="flex-project">
+                    <a href="https://github.com/J-On-Prod/PokerTimer">
+                        <p>PokerTimer</p>
+                        <div class="prog-container">
+                            <img src="media/image/prog/Android_robot.svg" alt="">
+                            <img src="media/image/prog/Java_Logo.svg" alt="">
+                        </div>
+                        <!-- <p>PokerTimer - Poker Tournament Preparation Tool</p> -->
+                        <!-- <p>Android - Java</p> -->
+                    </a>
+                </div>
             </div>
             <div id="floreale-holding-projects" >
                 <h3>Floreale Holding</h3>
                 <div class="flex-project">
-                    <ul>
-                        <li>
-                            <div class="box-project">
-                                <p>Function call visualizer</p>
-                                <div class="prog-container">
-
-                                </div>
-                                <!-- <p>Function call visualization and code visualization tool (Front & Backend)</p> 
-                                <p>Java/JSF and Primefaces Framework, SQL And Program for give data informations (Via Rocket Universe)</p>-->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box-project">
-                                <p>ERP on Angular</p>
-                                <div class="prog-container">
-
-                                </div>
-                                <!--<p>Development of a web ERP under Angular with a proprietary framework (Front & Backend)</p>
-                                <p>Angular (proprietary framework), RFL (proprietary API tool develop on Rocket Universe by InfoDATA)</p>-->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box-project">
-                                <p>ERP on Java/JSF</p>
-                                <div class="prog-container">
-
-                                </div>
-                            </div>
-                            <!--<p>Development of a web ERP using Java/JSF and Primefaces Framework (Front & Backend)</p>
-                            <p>Java/JSF and Primefaces Framework (Front & Backend), SQL (Via Rocket Universe)</p>-->
-                        </li>
-                        <li>
-                            <div class="box-project">
-                                <p>ERP on Rocket Universe / SB</p>
-                                <div class="prog-container">
-
-                                </div>
-                                <!--<p>Development of an ERP with Rocket Universe and System Builder</p>
-                                <p>Rocket Universe, Rocket System Builder</p>-->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box-project">
-                                <p>Extraction data for accounting</p>
-                                <div class="prog-container">
-
-                                </div>
-                                <!--<p>Extraction and formatting of data for accounting</p>
-                                <p>Java, SQL (Via Rocket Universe)</p>-->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box-project">
-                                <p>Sharepoint site</p>
-                                <div class="prog-container">
-
-                                </div>
-                                <!--<p>Creation of a Sharepoint site for host intermal documentation, creation of illustrations for the buttons with Gimp</p>
-                                <p>Sharepoint, Gimp</p>-->
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="box-project">
+                        <p>Function call visualizer</p>
+                        <div class="prog-container">
+                            <img src="media/image/prog/Java_Logo.svg" alt="">
+                            <img src="media/image/prog/logo-javascript.webp" alt="">
+                            <img src="media/image/prog/rocket.webp" alt="" srcset="">
+                            <img src="media/image/prog/sql.webp" alt="" srcset="">
+                        </div>
+                        <!-- <p>Function call visualization and code visualization tool (Front & Backend)</p> 
+                        <p>Java/JSF and Primefaces Framework, SQL And Program for give data informations (Via Rocket Universe)</p>-->
+                    </div>
+                    <div class="box-project">
+                        <p>ERP on Angular</p>
+                        <div class="prog-container">
+                            <img src="media/image/prog/logo-javascript.webp" alt="">
+                            <img src="media/image/prog/rocket.webp" alt="" srcset="">
+                        </div>
+                        <!--<p>Development of a web ERP under Angular with a proprietary framework (Front & Backend)</p>
+                        <p>Angular (proprietary framework), RFL (proprietary API tool develop on Rocket Universe by InfoDATA)</p>-->
+                    </div>
+                    <div class="box-project">
+                        <p>ERP on Java/JSF</p>
+                        <div class="prog-container">
+                            <img src="media/image/prog/Java_Logo.svg" alt="">
+                            <img src="media/image/prog/logo-javascript.webp" alt="">
+                            <img src="media/image/prog/sql.webp" alt="" srcset="">
+                            <img src="media/image/prog/rocket.webp" alt="" srcset="">
+                        </div>
+                    </div>
+                    <!--<p>Development of a web ERP using Java/JSF and Primefaces Framework (Front & Backend)</p>
+                    <p>Java/JSF and Primefaces Framework (Front & Backend), SQL (Via Rocket Universe)</p>-->
+                    <div class="box-project">
+                        <p>ERP on Rocket Universe / SB</p>
+                        <div class="prog-container">
+                            <img src="media/image/prog/sql.webp" alt="" srcset="">
+                        </div>
+                        <!--<p>Development of an ERP with Rocket Universe and System Builder</p>
+                        <p>Rocket Universe, Rocket System Builder</p>-->
+                    </div>
+                    <div class="box-project">
+                        <p>Extraction data for accounting</p>
+                        <div class="prog-container">
+                            <img src="media/image/prog/Java_Logo.svg" alt="">
+                            <img src="media/image/prog/sql.webp" alt="" srcset="">
+                        </div>
+                        <!--<p>Extraction and formatting of data for accounting</p>
+                        <p>Java, SQL (Via Rocket Universe)</p>-->
+                    </div>
+                    <div class="box-project">
+                        <p>Sharepoint site</p>
+                        <div class="prog-container">
+                            <img src="media/image/general/Microsoft_Office_SharePoint_(2019–present).svg" alt="" srcset="">
+                        </div>
+                        <!--<p>Creation of a Sharepoint site for host intermal documentation, creation of illustrations for the buttons with Gimp</p>
+                        <p>Sharepoint, Gimp</p>-->
+                    </div>
                 </div>
-                
             </div>
-            <div id=""></div>
+            <div id="detail-project">
+                <div id="detail-function-visualizer" class="hide-project">
+                    <h3>Function call visualizer</h3>
+                </div>
+                <div id="detail-erp-angular" class="hide-project">
+                    <h3>ERP on Angular</h3>
+                </div>
+                <div id="detail-erp-java" class="hide-project">
+                    <h3>ERP on Java/JSF</h3>
+                </div>
+                <div id="detail-rocket" class="hide-project">
+                    <h3>ERP on Rocket Universe / SB</h3>
+                </div>
+                <div id="detail-accounting" class="hide-project">
+                    <h3>Extraction data for accounting</h3>
+                </div>
+                <div id="detail-sharepoint" class="hide-project">
+                    <h3>Sharepoint site</h3>
+                </div>
+            </div>
         </article>
         <article id="contact" class="no-sticky-border">
             <h2>Contact</h2>

@@ -49,8 +49,35 @@ h4 {
 
 nav {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
     gap: 0.5vw;
     justify-content: flex-end;
+    align-items: center;
+    background-color: dimgray;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0.2vw;
+    border-radius: 50vw;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    /*background-color: whitesmoke;
+    color: dimgray;*/
+}
+
+nav h4 {
+    color: rgb(103, 208, 243);
+    padding: 0;
+    margin: 0 0  0 2vw;
+    flex-grow: 50;
 }
 
 .nav-element {
@@ -63,6 +90,7 @@ nav {
 header {
     display: grid;
     background-image: url("../media/image/backgrounds/navy-blue-fluid-painting-d0x1q0mcxqzzzanx.webp");
+    background-attachment: fixed;
     min-height: 100%;
 }
 
@@ -116,6 +144,10 @@ section {
     list-style-type: none;
 }
 
+.period-experience {
+    justify-self: end;
+}
+
 .icon-skills {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -129,14 +161,18 @@ section {
 
 #programming-skills {
     background-image: url("../media/image/backgrounds/shahadat-rahman-BfrQnKBulYQ-unsplash.webp");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+
+#others-skills, #programming-skills {
     padding: 3vh 0;
     margin: 3vh 0;
 }
 
-#programming-skills .icon-skills {
+#programming-skills .icon-skills, .skill-container .icon-skills {
     background-color: rgba(240, 240, 240, 0.9);
     color: black;
     padding: 1vw;
@@ -188,7 +224,7 @@ section {
     height: 43vh;
     width: 6px;
     margin: 0 auto;
-    background: linear-gradient(rgba(213, 255, 219, 0) 0%, rgb(213, 255, 219) 30%, rgb(249, 255, 214) 40%, rgb(249, 255, 214) 85%, rgb(210, 239, 250) 95%);
+    background: linear-gradient(rgba(213, 255, 219, 0) 0%, rgb(213, 255, 219) 30%, rgb(249, 255, 214) 47%, rgb(249, 255, 214) 80%, rgb(210, 239, 250) 95%);
     grid-area: 1/2;
 }
 
@@ -279,6 +315,9 @@ section {
 
 .flex-project {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10vh 20vw;
 }
 
 .lang-element {
@@ -300,6 +339,21 @@ section {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.prog-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.prog-container img {
+    width: auto;
+    height: 1.5vw;
+}
+
+.hide-project {
+    display: none;
 }
 
 .bt-primary {
