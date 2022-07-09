@@ -13,11 +13,8 @@ function addOrRemoveReveal(reveal) {
 }
 
 function showOrHideNavbar() {
-    const windowHeight = window.innerHeight;
     const presentationTop = document.querySelector('#presentation').getBoundingClientRect().top;
     const navbar = document.querySelector('nav');
-
-    console.log(presentationTop);
 
     if (presentationTop < 200) {
         navbar.style.display = 'flex';
