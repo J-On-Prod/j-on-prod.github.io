@@ -25,6 +25,16 @@ h2 {
     font-size: max(2.5vw, 20px);
 }
 
+header span, h3 {
+    font-size: max(2vw, 17px);
+}
+
+h4 {
+    font-size: max(1.7vw, 15px);
+    margin: 1vh 0;
+}
+
+
 #intro-web {
     margin-bottom: 0;
 }
@@ -33,13 +43,6 @@ h2 {
     margin-top: 0;
 }
 
-header span, h3 {
-    font-size: max(2vw, 17px);
-}
-
-h4 {
-    font-size: max(1.7vw, 15px);
-}
 
 .punch-line {
     font-family: 'Cormorant Garamond', serif;
@@ -80,8 +83,8 @@ nav #nav-name {
     flex-grow: 40;
 }
 
-nav h4 {
-    margin: 0 0 0 2vw;
+nav h4{
+    margin: 0 0 0 10vw;
 }
 
 .nav-element {
@@ -333,19 +336,20 @@ section {
 
 .box-project {
     display: grid;
-    padding: 1.2vw;
     background-color: whitesmoke;
     border-radius: 1vw;
     width: max(20vw, 300px);
+    height: max(15vw, 220px);
     transition: 300ms ease-in;
+    grid-template-columns: 4fr 1fr;
 }
 
 .image-illustration {
-    width: max(15vw, 270px);
-    height: auto;
+    width: 100%;
     grid-area: 1 / 1 / 1 / 3;
     justify-self: center;
-    border-radius: 0.5vw;
+    padding: 0;
+    border-radius: 1vw 1vw 0 0;
 }
 
 .box-project p {
@@ -355,17 +359,22 @@ section {
     margin: 1vh 0 0 0;
 }
 
+.box-project p ,.prog-container{
+    margin: 1.2vw;
+}
+
 .prog-container {
     display: flex;
     justify-content: end;
-    align-items: flex-end;
+    align-items: center;
     gap: 0.5vw;
     grid-area: 2 / 2;
+    margin: 0 0.5vw 0 0;
 }
 
 .prog-container img {
     width: auto;
-    height: max(17px, 1.5vw);
+    height: max(16px, 1.3vw);
 }
 
 .lang-element {
@@ -395,10 +404,25 @@ section {
     margin: 0;
 }
 
-
-
 .hide-project {
     display: none;
+}
+
+.show-project {
+    display: inline;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-container {
+    background-color: white;
+    padding: 2vh 2vw;
+    margin: 5vh 5vw;
+    border-radius: 2vh;
 }
 
 .bt-primary {

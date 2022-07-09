@@ -39,18 +39,25 @@ function attachOnClickOfProjects() {
         idProject.shift()
         idProject = idProject.join('-');
         p.addEventListener('click', () => {
-            openDetailProject('detail-' + idProject)
+            openDetailProject('#detail-' + idProject)
         });
     }
 }
 
 
 function openDetailProject(idProject) {
-    console.log(idProject);
+    let divSelect = document.querySelector(idProject);
+    divSelect.classList.remove('hide-project');
+    divSelect.classList.add('show-project');
+
+    divSelect.addEventListener('click', closeDetailProject)
 }
 
 function closeDetailProject() {
+    let divSelect = document.querySelector('.show-project');
 
+    divSelect.classList.remove('show-project');
+    divSelect.classList.add('hide-project');
 }
 
 window.addEventListener('scroll', reveal);
