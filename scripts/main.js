@@ -49,15 +49,21 @@ function openDetailProject(idProject) {
     let divSelect = document.querySelector(idProject);
     divSelect.classList.remove('hide-project');
     divSelect.classList.add('show-project');
-
     divSelect.addEventListener('click', closeDetailProject)
+
+    // Manage the overflow for stop the scroll
+    let bodySelect = document.querySelector('body');
+    bodySelect.style.overflowY = 'hidden';
 }
 
 function closeDetailProject() {
     let divSelect = document.querySelector('.show-project');
-
     divSelect.classList.remove('show-project');
     divSelect.classList.add('hide-project');
+
+    // Manage the overflow for restart scroll
+    let bodySelect = document.querySelector('body');
+    bodySelect.style.overflowY = '';
 }
 
 window.addEventListener('scroll', reveal);
