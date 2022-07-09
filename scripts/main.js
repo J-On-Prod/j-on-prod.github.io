@@ -1,5 +1,3 @@
-window.addEventListener('scroll', reveal);
-
 function addOrRemoveReveal(reveal) {
     const windowHeight = window.innerHeight;
     const revealTop = reveal.getBoundingClientRect().top;
@@ -32,11 +30,30 @@ function reveal() {
     showOrHideNavbar();
 }
 
+function attachOnClickOfProjects() {
+    const allProjects = document.querySelectorAll('.clickable-project');
+
+    for (let p of allProjects) {
+        let idProject = p.id;
+        idProject = idProject.split('-')
+        idProject.shift()
+        idProject = idProject.join('-');
+        p.addEventListener('click', () => {
+            openDetailProject('detail-' + idProject)
+        });
+    }
+}
+
 
 function openDetailProject(idProject) {
-
+    console.log(idProject);
 }
 
 function closeDetailProject() {
 
+}
+
+window.addEventListener('scroll', reveal);
+window.onload = function() {
+    attachOnClickOfProjects();
 }

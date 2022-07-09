@@ -138,7 +138,7 @@ section {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 0 150px;
+    gap: 0 5vw;
 }
 
 .skill-container li {
@@ -152,9 +152,9 @@ section {
 .icon-skills {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    width: max(200px, 17vw);
+    width: max(300px, 17vw);
     align-items: center;
-    gap: 0px 0;
+    gap: 0 0;
 }
 
 .icon-skills img {
@@ -201,7 +201,7 @@ section {
     display: grid;
     justify-content: center;
     grid-template-columns: 2fr 1fr 4fr 3fr;
-    grid-template-rows: repeat(4, 10vh);
+    grid-template-rows: repeat(5, 10vh);
 }
 
 
@@ -227,7 +227,7 @@ section {
 }
 
 #timeline-experience {
-    height: 43vh;
+    height:40vh;
     width: 6px;
     margin: 0 auto;
     background: linear-gradient(rgba(213, 255, 219, 0) 0%, rgb(213, 255, 219) 30%, rgb(249, 255, 214) 47%, rgb(249, 255, 214) 80%, rgb(210, 239, 250) 95%);
@@ -333,7 +333,7 @@ section {
 
 .box-project {
     display: grid;
-    padding: 1vw;
+    padding: 1.2vw;
     background-color: whitesmoke;
     border-radius: 1vw;
     width: max(20vw, 300px);
@@ -351,7 +351,7 @@ section {
 .box-project p {
     grid-area: 2 / 1;
     font-weight: 600;
-    font-size: max(13px, 1.2vw);
+    font-size: max(13px, 1vw);
     margin: 1vh 0 0 0;
 }
 
@@ -416,4 +416,22 @@ section {
 
 .box-hover-shadow:hover {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1320px) {
+    .skill-container {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media (max-width: 700px)  {
+    #maison-des-travaux-type, #lomme-bts-type, #caen-bachelor-type ,#floreale-holding-type, #title-type {
+        display: none;
+    }
+
+    .experiences-container {
+        grid-template-columns: 2fr 1fr 4fr;
+    }
 }
