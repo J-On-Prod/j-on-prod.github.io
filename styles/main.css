@@ -325,6 +325,11 @@ section {
     gap: 10vh 5vw;
 }
 
+.flex-project a {
+    text-decoration: none;
+    color: black;
+}
+
 .box-project {
     background-color: whitesmoke;
     width: 20vw;
