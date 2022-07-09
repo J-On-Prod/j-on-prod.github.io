@@ -43,7 +43,6 @@ h4 {
     margin-top: 0;
 }
 
-
 .punch-line {
     font-family: 'Cormorant Garamond', serif;
     font-size: max(1.5vw, 14px);
@@ -92,6 +91,11 @@ nav h4{
     align-items: baseline;
     gap: 0.5vw;
     font-size: max(0.8vw, 20px);
+    transition: 300ms ease-in;
+}
+
+.nav-element:hover {
+    text-decoration: underline;
 }
 
 header {
