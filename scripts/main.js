@@ -19,7 +19,7 @@ function showOrHideNavbar() {
 
     console.log(presentationTop);
 
-    if (presentationTop < 100) {
+    if (presentationTop < 200) {
         navbar.style.display = 'flex';
     } else {
         navbar.style.display = 'none';
