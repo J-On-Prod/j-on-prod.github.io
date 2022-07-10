@@ -472,6 +472,12 @@ section {
     flex-wrap: wrap;
 }
 
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+}
+
 .icon-social {
     height: max(2vw, 40px);
     width: auto;

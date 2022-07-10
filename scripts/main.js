@@ -68,5 +68,6 @@ function closeDetailProject() {
 
 window.addEventListener('scroll', reveal);
 window.onload = function() {
+    setupLanguageButton();
     attachOnClickOfProjects();
 }
