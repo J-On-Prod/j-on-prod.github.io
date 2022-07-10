@@ -131,7 +131,7 @@ header, header a {
 
 section {
     padding: 1vw 0;
-    background-color: lightblue;
+    background-color: rgb(180, 214, 224);
 }
 
 .no-sticky-border {
@@ -214,21 +214,22 @@ section {
     display: grid;
     justify-content: center;
     grid-template-columns: 2fr 1fr 4fr 3fr;
-    grid-template-rows: repeat(5, 10vh);
+    grid-template-rows: repeat(5, max(4.5vw, 75px));
 }
 
 .logo-places {
     display: flex;
     background: whitesmoke;
     border-radius: 4vh;
-    padding: 1vh;
-    width: max(2.5vw, 16px);
-    height: max(2.5vw, 16px);
+    padding: .8vh;
+    width: max(2vw, 16px);
+    height: max(2vw, 16px);
     justify-self: center;
+    align-self: center;
 }
 
 .logo-places img {
-    width: max(2.5vw, 16px);
+    width: max(2vw, 16px);
     align-self: center;
     justify-self: center;
 }
@@ -239,7 +240,7 @@ section {
 }
 
 #timeline-experience {
-    height:40vh;
+    height:max(20vw, 330px);
     width: 6px;
     margin: 0 auto;
     background: linear-gradient(rgba(213, 255, 219, 0) 0%, rgb(213, 255, 219) 30%, rgb(249, 255, 214) 47%, rgb(249, 255, 214) 80%, rgb(210, 239, 250) 95%);
