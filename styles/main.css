@@ -166,7 +166,12 @@ section {
     gap: 0 0;
 }
 
-.icon-skills img {
+.flex-skill-title {
+    display: flex;
+    gap: 1vw;
+}
+
+.icon-skills img, .icon-level {
     width: max(1.5vw, 12px);
 }
 
@@ -246,7 +251,6 @@ section {
     background: linear-gradient(rgba(213, 255, 219, 0) 0%, rgb(213, 255, 219) 30%, rgb(249, 255, 214) 47%, rgb(249, 255, 214) 80%, rgb(210, 239, 250) 95%);
     grid-area: 1/2;
 }
-
 
 #title-activity {
     grid-area: 1 / 3;
