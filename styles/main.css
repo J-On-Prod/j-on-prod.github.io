@@ -34,6 +34,19 @@ h4 {
     margin: 1vh 0;
 }
 
+.reveal>* {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active-reveal>* {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* HEADER */
 
 #intro-web {
     margin-bottom: 0;
@@ -48,6 +61,38 @@ h4 {
     font-size: max(1.5vw, 14px);
     margin: 4vh 0;
 }
+
+header {
+    display: grid;
+    background-image: url("../media/image/backgrounds/navy-blue-fluid-painting-d0x1q0mcxqzzzanx.webp");
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+header, header a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#header-left {
+    grid-column: 1 /6;
+    grid-row: 1;
+    text-align: right;
+    margin-right: 8%;
+    margin-top: 20%;
+}
+
+#header-right {
+    display: inline-block;
+    grid-column: 6/ 12;
+    grid-row: 1;
+    background-color: rgba(220, 220, 220, 0.3);
+    padding-left: 8%;
+    padding-top: 45%;
+    border-left: rgba(220, 220, 220, 0.75) 3px solid;
+}
+
+/* NAVIGATION */
 
 nav {
     display: none;
@@ -99,35 +144,7 @@ nav h4{
     text-decoration: underline;
 }
 
-header {
-    display: grid;
-    background-image: url("../media/image/backgrounds/navy-blue-fluid-painting-d0x1q0mcxqzzzanx.webp");
-    background-attachment: fixed;
-    min-height: 100%;
-}
-
-header, header a {
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-#header-left {
-    grid-column: 1 /6;
-    grid-row: 1;
-    text-align: right;
-    margin-right: 8%;
-    margin-top: 20%;
-}
-
-#header-right {
-    display: inline-block;
-    grid-column: 6/ 12;
-    grid-row: 1;
-    background-color: rgba(220, 220, 220, 0.3);
-    padding-left: 8%;
-    padding-top: 45%;
-    border-left: rgba(220, 220, 220, 0.75) 3px solid;
-}
+/* SECTION - PRESENTATION */
 
 section {
     padding: 1vw 0;
@@ -141,6 +158,8 @@ section {
 .warning {
     color: orangered;
 }
+
+/* SECTION - SKILLS */
 
 .skill-container {
     display: flex;
@@ -203,7 +222,7 @@ section {
     list-style-type: none;
 }
 
-/* GRID ELEMENTS */
+/* SECTION - EXPERIENCES */
 
 #experiences {
     background-color: white;
@@ -335,6 +354,8 @@ section {
 .color-work {
     background-color: rgb(213, 255, 219);
 }
+
+/* SECTION - PROJECTS */
 
 .flex-project {
     display: flex;
@@ -472,12 +493,6 @@ section {
     flex-wrap: wrap;
 }
 
-.footer-flex {
-    display: flex;
-    justify-content: center;
-    gap: 4vw;
-}
-
 .icon-social {
     height: max(2vw, 40px);
     width: auto;
@@ -486,6 +501,14 @@ section {
 
 .icon-social:hover {
     transform: scale(1.05);
+}
+
+/* SECTION - FOOTER */
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
 }
 
 @media (max-width: 1320px) {

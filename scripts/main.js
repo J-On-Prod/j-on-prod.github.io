@@ -1,7 +1,7 @@
 function addOrRemoveReveal(reveal) {
     const windowHeight = window.innerHeight;
     const revealTop = reveal.getBoundingClientRect().top;
-    const revealPoint = 150;
+    const revealPoint = window.innerHeight / 4;
 
     if (revealTop < windowHeight - revealPoint) {
         reveal.classList.add('active-reveal');
