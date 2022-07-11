@@ -58,7 +58,6 @@ function changeLang(lang) {
         for (const divSelect of document.querySelectorAll(translate['selector'])) {
             divSelect.textContent = translate['text'];
         }
-        
     }; 
 }
 
