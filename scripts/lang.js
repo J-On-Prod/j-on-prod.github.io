@@ -10,55 +10,36 @@
  */
 
  const dataLang = {
+    "selector" : {
+        "about-me" : ".about-me-text",
+        "projects" : ".projects-text",
+        "contact" : ".contact-text",
+        "bt-confirm-mail" : "#bt-confirm-mail",
+        "languages-tools" : "languages-tools-title"
+    },
     "en" : {
-        "about-me" : {
-            "text" : "About me",
-            "selector" : ".about-me-text"
-        },
-        "projects" : {
-            "text" : "Projects",
-            "selector" : ".projects-text"
-        },
-        "contact" : {
-            "text" : "Contact",
-            "selector" : ".contact-text"
-        },
-        "bt-confirm-mail" : {
-            "text" : "Get my e-mail",
-            "selector" : "#bt-confirm-mail"
-        },
-        /*"" : {
-            "text" : "",
-            "selector" : ""
-        }*/
+        "about-me" : "About me",
+        "projects" : "Projects",
+        "contact" :  "Contact",
+        "bt-confirm-mail" : "Get my e-mail",
+        "languages-tools" : "Languages & Tools"
     },
     "fr" : {
-        "about-me" : {
-            "text" : "A propos de moi",
-            "selector" : ".about-me-text"
-        },
-        "projects" : {
-            "text" : "Projets",
-            "selector" : ".projects-text"
-        },
-        "contact" : {
-            "text" : "Contact",
-            "selector" : ".contact-text"
-        },
-        "bt-confirm-mail" : {
-            "text" : "Récupérer mon e-mail",
-            "selector" : "#bt-confirm-mail"
-        },
+        "about-me" : "A propos de moi",
+        "projects" : "Projets",
+        "contact" : "Contact",
+        "bt-confirm-mail" : "Récupérer mon e-mail",
+        "languages-tools" : "Langages & Outils"
+        
     },
 }
 
 function changeLang(lang) {
-    const [keyOther, langSelect] = Object.entries(dataLang[lang]);
-    for (const [key, translate] of Object.entries(dataLang[lang])) {
-        for (const divSelect of document.querySelectorAll(translate['selector'])) {
-            divSelect.textContent = translate['text'];
+    for (const [keySelector, selector] of Object.entries(dataLang['selector'])) {
+        for (const divSelect of document.querySelectorAll(selector)) {
+            divSelect.textContent = dataLang[lang][keySelector];
         }
-    }; 
+    };
 }
 
 function setupLanguageButton() {
