@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,9 +47,9 @@
         <!-- Voir pour cree un fond liquide avec Js -->
         <div id="header-left">
             <h1>Jonathan DURAND</h1>
-            <h2 id="intro-web">Web Developer</h2>
+            <h2 id="intro-web">Développeur Web</h2>
             <h3 id="intro-frontend">Frontend</h3>
-            <p class="punch-line">Creating allows me to go beyond what we can imagine</p>
+            <p class="punch-line">Créer me permet d'aller au-delà de ce que nous pouvons imaginer.</p>
         </div>
         <div id="header-right">
             <ul class="no-dot nav-container">
@@ -73,7 +73,7 @@
                     <a href="#contact">
                         <div class="nav-element">
                             <img src="media/image/Telephone_receiver.svg" alt="contact" class="icon-nav">
-                            <p class="contact-text">Contact me</p>
+                            <p class="contact-text">Contact</p>
                         </div>
                     </a>
                 </li>
@@ -90,13 +90,13 @@
                 <p></p>
             </div>
             <div id="skills">
-                <h2 class="no-sticky-border">Skills</h2>
+                <h2 class="no-sticky-border">Compétences</h2>
                 <div id="programming-skills" class="reveal">
-                    <h3 class="no-sticky-border">Programming Skills</h3>
+                    <h3 class="no-sticky-border">Compétences en Programmation</h3>
                     <div class="skill-container">
                         <div id="prog-bases">
                             <div class="flex-skill-title">
-                                <h4>Bases</h4>
+                                <h4 id="bases">Bases</h4>
                             <img src="media/image/base.svg" alt="" class="icon-level">
                             </div>
                             <div class="icon-skills box-light-shadow">
@@ -112,7 +112,7 @@
                         </div>
                         <div id="prog-acquired">
                             <div class="flex-skill-title">
-                                <h4>Acquired</h4>
+                                <h4 id="acquired">Acquired</h4>
                             <img src="media/image/acquired.svg" alt="" class="icon-level">
                             </div>
                             <div class="icon-skills box-light-shadow">
@@ -134,7 +134,7 @@
                         </div>
                         <div id="prog-master">
                             <div class="flex-skill-title">
-                                <h4>Master</h4>
+                                <h4 id="master" >Maitrisé</h4>
                                 <img src="media/image/master.svg" alt="" class="icon-level">
                             </div>
                             <div class="icon-skills box-light-shadow">
@@ -152,7 +152,7 @@
                 </div>
                 <div id="others-skills" class="skill-container reveal">
                     <div id="general-skills">
-                        <h4>General Skills</h4>
+                        <h4>Compétences générales</h4>
                         <div class="skill-container">
                             <div class="icon-skills box-light-shadow">
                                 <img src="media/image/general/Microsoft_Office_logo_(2013–2019).svg" alt="">
@@ -166,37 +166,37 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Qualities">
-                        <h4>Qualities</h4>
+                    <div id="qualities">
+                        <h4>Qualités</h4>
                         <div class="skill-container">
                             <div class="icon-skills box-light-shadow">
                                 <img src="media/image/check-mark-svgrepo-com.svg" alt="">
-                                <p>Curious and enthusiastic</p>
+                                <p id="curious-quality">Curieux et Passionné</p>
                                 <img src="media/image/check-mark-svgrepo-com.svg" alt="">
-                                <p>Team spirit</p>
+                                <p id="team-spirit-quality">Esprit d'équipe</p>
                                 <img src="media/image/check-mark-svgrepo-com.svg" alt="">
-                                <p>Adaptability</p>
+                                <p id="adaptability-quality">Adaptabilité</p>
                                 <img src="media/image/check-mark-svgrepo-com.svg" alt="">
-                                <p>Autonomy</p>
+                                <p id="autonomy-quality">Autonomie</p>
                                 <img src="media/image/check-mark-svgrepo-com.svg" alt="">
-                                <p>Ambitious</p>
+                                <p id="ambitious-quality">Ambitieux</p>
                             </div>
                         </div>
                     </div>
                     <div id="hobbies">
-                        <h4>Other Activities & Hobbies</h4>
+                        <h4>Activités autres et Passions</h4>
                         <div class="skill-container">
                             <div class="icon-skills box-light-shadow">
                                 <img src="media/image/hobbies/Simple_Music.svg" alt="">
-                                <p>Composition and Musical Mixing</p>
+                                <p id="composition-music">Composition et mixage de musiques</p>
                                 <img src="media/image/hobbies/Icone_natation.svg" alt="">
-                                <p>Natation</p>
+                                <p id="natation">Natation</p>
                                 <img src="media/image/hobbies/Noun_15537_ccElliotVerhaeren_travel.svg" alt="">
-                                <p>Travel</p>
+                                <p id="travel">Voyages</p>
                                 <img src="media/image/hobbies/Film_reel.svg" alt="">
-                                <p>Films</p>
+                                <p id="films">Films</p>
                                 <img src="media/image/hobbies/Bicycle-Silhouette.svg" alt="">
-                                <p>Bike</p>
+                                <p id="bike">VTT</p>
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                 <div class="experiences-container">
                     <div class="line" id="timeline-experience"></div>
                     <div id="title-activity">
-                        <h3>Activities</h3>
+                        <h3>Activités</h3>
                     </div>
                     <div id="title-type">
                         <h3>Type</h3>
@@ -224,8 +224,8 @@
                         </a>
                     </div>
                     <div id="floreale-holding-type"  class="border-experience">
-                        <p class="type" >Work</p>
-                        <p class="type" >Training period (2 months)</p>
+                        <p class="type type-work" >Travail</p>
+                        <p class="type type-training-period-2-months" >Stage (2 mois)</p>
                     </div>
                     <div id="caen-bachelor-name"  class="border-experience">
                         <p class="name" >Bachelor's degree in computer science - Caen</p>
@@ -237,7 +237,7 @@
                         <p class="period" >June 2014 - June 2019</p>
                     </div>
                     <div id="caen-bachelor-type"  class="border-experience">
-                        <p class="type" >Studies</p>
+                        <p class="type type-studies" >Études</p>
                     </div>
                     <div id="lomme-bts-logo" class="logo-places color-education">
                         <img src="media/image/places/LOGO-Jean-PROUVE-2019.webp" alt="">
@@ -249,7 +249,7 @@
                         <p class="period" >June 2012 - June 2014</p>
                     </div>
                     <div id="lomme-bts-type" class="border-experience">
-                        <p class="type" >Studies</p>
+                        <p class="type type-studies" >Études</p>
                     </div>
                     <div id="maison-des-travaux-period" class="period-experience">
                         <p class="period" >May 2013 - June 2013</p>
@@ -261,7 +261,7 @@
                         <p class="name" >La Maison des Travaux</p>
                     </div>
                     <div id="maison-des-travaux-type">
-                        <p class="type" >Training period</p>
+                        <p class="type type-training-period" >Stage</p>
                     </div>
                 </div>
             </div>
@@ -290,7 +290,7 @@
                 <div class="flex-project">
                     <div class="box-project box-hover-shadow clickable-project" id="resume-function-visualizer">
                         <img src="media/image/projects/concentric cytoscape.jpg" alt="" class="image-illustration box-light-shadow">
-                        <p>Function call visualizer</p>
+                        <p class="basic-explorer-title">Visualiseur d'appel de fonction</p>
                         <div class="prog-container">
                             <img src="media/image/prog/Java_Logo.svg" alt="Java">
                             <img src="media/image/prog/Javascript.svg" alt="HTML, CSS, Javascript">
@@ -302,7 +302,7 @@
                     </div>
                     <div class="box-project box-hover-shadow clickable-project" id="resume-erp-angular">
                         <img src="media/image/projects/pokertimer.jpg" alt="" class="image-illustration box-light-shadow">
-                        <p>ERP on Angular</p>
+                        <p class="erp-angular-title">ERP sur Java/JSF</p>
                         <div class="prog-container">
                             <img src="media/image/prog/Javascript.svg" alt="Javascript">
                             <img src="media/image/prog/rocket.svg" alt="Rocket Universe">
@@ -312,7 +312,7 @@
                     </div>
                     <div class="box-project box-hover-shadow clickable-project" id="resume-erp-java">
                         <img src="media/image/projects/pokertimer.jpg" alt="" class="image-illustration box-light-shadow">
-                        <p>ERP on Java/JSF</p>
+                        <p class="erp-java-title">ERP sur Java/JSF</p>
                         <div class="prog-container">
                             <img src="media/image/prog/Java_Logo.svg" alt="Java">
                             <img src="media/image/prog/Javascript.svg" alt="HTML, CSS, Javascript">
@@ -324,7 +324,7 @@
                     <p>Java/JSF and Primefaces Framework (Front & Backend), SQL (Via Rocket Universe)</p>-->
                     <div class="box-project box-hover-shadow clickable-project" id="resume-rocket">
                         <img src="media/image/projects/pokertimer.jpg" alt="" class="image-illustration box-light-shadow">
-                        <p>ERP on Rocket Universe / SB</p>
+                        <p class="erp-universe-title">ERP sur Rocket Universe / SB</p>
                         <div class="prog-container">
                             <img src="media/image/prog/sql.svg" alt="SQL" srcset="">
                         </div>
@@ -333,7 +333,7 @@
                     </div>
                     <div class="box-project box-hover-shadow clickable-project" id="resume-accounting">
                         <img src="media/image/projects/fr-creation-fichier-csv.jpg" alt="" class="image-illustration box-light-shadow">
-                        <p>Extraction data for accounting</p>
+                        <p class="extract-accounting-title">Extraction des données comptable</p>
                         <div class="prog-container">
                             <img src="media/image/prog/Java_Logo.svg" alt="Java">
                             <img src="media/image/prog/sql.svg" alt="SQL" >
@@ -343,7 +343,7 @@
                     </div>
                     <div class="box-project box-hover-shadow clickable-project" id="resume-sharepoint">
                         <img src="media/image/projects/SharePoint_Onlinejpg.jpg" alt="" class="image-illustration box-light-shadow">   
-                        <p>Sharepoint site</p>
+                        <p class="sharepoint-title">Site internet Sharepoint</p>
                         <div class="prog-container">
                             <img src="media/image/general/Microsoft_Office_SharePoint_(2019–present).svg" alt="Sharepoint" srcset="">
                         </div>
@@ -356,7 +356,7 @@
         <aside id="detail-project">
             <div id="detail-function-visualizer" class="hide-project">
                 <div class="project-container">
-                    <h3>Function call visualizer</h3>
+                    <h3>Visualiseur d'appel de fonction</h3>
                     <p class="project-detail">The goal of this project was created a graph who show all call and relation between programs, fields, process</p>
                     <h4 class="languages-tools-title">Langages & Outils</h4>
                     <div class="lang-tools">
@@ -379,7 +379,7 @@
             </div>
             <div id="detail-erp-angular" class="hide-project">
                 <div class="project-container">
-                    <h3>ERP on Angular</h3>
+                    <h3>ERP sur Angular</h3>
                     <p class="project-detail"></p>
                     <h4 class="languages-tools-title">Langages & Outils</h4>
                     <div class="lang-tools">
@@ -398,7 +398,7 @@
             </div>
             <div id="detail-erp-java" class="hide-project">
                 <div class="project-container">
-                    <h3>ERP on Java/JSF</h3>
+                    <h3>ERP sur Java/JSF</h3>
                     <p class="project-detail"></p>
                     <h4 class="languages-tools-title">Langages & Outils</h4>
                     <div class="lang-tools">
@@ -420,7 +420,7 @@
             </div>
             <div id="detail-rocket" class="hide-project">
                 <div class="project-container">
-                    <h3>ERP on Rocket Universe / SB</h3>
+                    <h3 class="erp-universe-title">ERP sur Rocket Universe / SB</h3>
                     <p class="project-detail"></p>
                     <h4 class="languages-tools-title">Langages & Outils</h4>
                     <div class="lang-tools">
@@ -437,7 +437,7 @@
             </div>
             <div id="detail-accounting" class="hide-project">
                 <div class="project-container">
-                    <h3>Extraction data for accounting</h3>
+                    <h3>Extraction des données comptable</h3>
                     <p class="project-detail"></p>
                     <h4 class="languages-tools-title">Langages & Outils</h4>
                     <div class="lang-tools">
@@ -452,7 +452,7 @@
             </div>
             <div id="detail-sharepoint" class="hide-project">
                 <div class="project-container">
-                    <h3>Sharepoint site</h3>
+                    <h3>Site internet Sharepoin</h3>
                     <p class="project-detail"></p>
                     <h4 class="languages-tools-title">Langages & Outils</h4>
                     <div class="lang-tools">
@@ -471,7 +471,7 @@
             <div class="footer-flex">
                 <div id="email">
                     <h3>Email</h3>
-                    <div id="bt-confirm-mail" class="bt-primary box-hover-shadow">Get my e-mail</div>
+                    <div id="bt-confirm-mail" class="bt-primary box-hover-shadow">Récupérer mon e-mail</div>
                     <!-- <a href="mailto:djjd50@gmail.com">djjd50@gmail.com</a> -->
                 </div>
                 <div id="social">
