@@ -9,137 +9,173 @@
  * TODO : Gestion de cookie pour garder la langue par défaut
  */
 
- const dataLang = {
-    "selector" : {
-        "intro-web" : "#intro-web",
-        "intro-frontend" : "#intro-frontend",
-        "punch-line" : ".punch-line",
-        "about-me" : ".about-me-text",
-        "projects" : ".projects-text",
-        "contact" : ".contact-text",
-        "bt-confirm-mail" : "#bt-confirm-mail",
-        "experiences" : "experiences h2",
-        "type-work" : ".type-work",
-        "type-studies" : ".type-studies",
-        "type-type-training-period" : ".type-type-training-period",
-        "type-type-training-period-2-months" : ".type-type-training-period-2-months",
-        "languages-tools" : ".languages-tools-title",
-        "pokertimer-title" : ".pokertimer-title",
-        "basic-explorer-title" : ".basic-explorer-title",
-        "erp-universe-title" : ".erp-universe-title",
-        "erp-java-title" : ".erp-java-title",
-        "erp-angular-title" : ".erp-angular-title",
-        "extract-accounting-title" : ".extract-accounting-title",
-        "sharepoint-title" : ".sharepoint-title",
-        "curious-quality" : "#curious-quality",
-        "team-spirit-quality" : "#team-spirit-quality",
-        "adaptability-quality" : "#adaptability-quality",
-        "autonomy-quality" : "#autonomy-quality",
-        "ambitious-quality" : "#ambitious-quality",
-        "composition-music" : "#composition-music",
-        "natation" : "#natation",
-        "travel" : "#travel",
-        "films" : "#films",
-        "bike" : "#bike",
-        "skills" : "#skills h2",
-        "programming-skills" : ".programming-skills h3",
-        "bases" : "#bases",
-        "acquired" : "#acquired",
-        "master" : "#master",
-        "general-skills" : "#general-skills h4",
-        "qualities" : "#qualities h4",
-        "hobbies" : "#hobbies h2"
-    },
-    "en" : {
-        "intro-web" : "Web Developer",
-        "intro-frontend" : "#intro-frontend",
-        "punch-line" : "Creating allows me to go beyond what we can imagine",
-        "about-me" : "About me",
-        "projects" : "Projects",
-        "contact" :  "Contact",
-        "bt-confirm-mail" : "Get my e-mail",
-        "experiences" : "Experiences",
-        "title-activity" : "Activities",
-        "type-work" : "Work",
-        "type-studies" : "Studies",
-        "type-type-training-period" : "Training period",
-        "type-type-training-period-2-months" : "Training period (2 months)",
-        "languages-tools" : "Languages & Tools",
-        "pokertimer-title" : "PokerTimer",
-        "basic-explorer-title" : "Function call visualizer",
-        "erp-universe-title" : "ERP sur Rocket Universe / SB",
-        "erp-java-title" : "ERP on Java/JSF",
-        "erp-angular-title" : "ERP on Angular",
-        "extract-accounting-title" : "Extraction data for accounting",
-        "sharepoint-title" : "Sharepoint website",
-        "curious-quality" : "Curious and enthusiastic",
-        "team-spirit-quality" : "Team spirit",
-        "adaptability-quality" : "Adaptability",
-        "autonomy-quality" : "Autonomy",
-        "ambitious-quality" : "Ambitious",
-        "composition-music" : "Composition and Musical Mixing",
-        "natation" : "Natation",
-        "travel" : "Travel",
-        "films" : "Films",
-        "bike" : "Bike",
-        "skills" : "Compétences",
-        "programming-skills" : "Programming Skills",
-        "bases" : "Bases",
-        "acquired" : "Acquired",
-        "master" : "Master",
-        "general-skills" : "General Skills",
-        "qualities" : "Qualities",
-        "hobbies" : "#hobbies h2"
-    },
-    "fr" : {
-        "intro-web" : "Développeur Web",
-        "intro-frontend" : "Frontend",
-        "punch-line" : "Créer me permet d'aller au-delà de ce que nous pouvons imaginer",
-        "about-me" : "A propos de moi",
-        "projects" : "Projets",
-        "contact" : "Contact",
-        "bt-confirm-mail" : "Récupérer mon e-mail",
-        "experiences" : "Experiences",
-        "title-activity" : "Activités",
-        "type-work" : "Travail",
-        "type-studies" : "Etudes",
-        "type-type-training-period" : "Stage",
-        "type-type-training-period-2-months" : "Stage (2 mois)",
-        "languages-tools" : "Langages & Outils",
-        "pokertimer-title" : "PokerTimer",
-        "basic-explorer-title" : "Visualiseur d'appel de fonction",
-        "erp-universe-title" : "ERP sur Rocket Universe / SB",
-        "erp-java-title" : "ERP sur Java/JSF",
-        "erp-angular-title" : "ERP sur Angular",
-        "extract-accounting-title" : "Extraction des données comptable",
-        "sharepoint-title" : "Site internet Sharepoint",
-        "curious-quality" : "Curieux et Passionné",
-        "team-spirit-quality" : "Esprit d'équipe",
-        "adaptability-quality" : "Adaptabilité",
-        "autonomy-quality" : "Autonomie",
-        "ambitious-quality" : "Ambitieux",
-        "composition-music" : "Composition et mixage de musiques",
-        "natation" : "Natation",
-        "travel" : "Voyages",
-        "films" : "Films",
-        "bike" : "VTT",
-        "programming-skills" : "Compétences en Programmation",
-        "bases" : "Bases",
-        "acquired" : "Acquis",
-        "master" : "Maitrisé",
-        "general-skills" : "Compétences générales",
-        "qualities" : "Qualités",
-        "hobbies" : "Activités autres et Passions"
-    },
-}
+const dataLang = [
+    {
+        "selector": "#intro-web",
+        "en": "Web Developer",
+        "fr": "Développeur Web",
+    }, {
+        "selector": "#intro-frontend",
+        "en": "Frontend",
+        "fr": "Frontend"
+    }, {
+        "selector": ".punch-line",
+        "en": "Creating allows me to go beyond what we can imagine",
+        "fr": "Créer me permet d'aller au-delà de ce que nous pouvons imaginer"
+    }, {
+        "selector": ".about-me-text",
+        "en": "About me",
+        "fr": "A propos de moi"
+    }, {
+        "selector": ".projects-text",
+        "en": "Projects",
+        "fr": "Projets"
+    }, {
+        "selector": ".contact-text",
+        "en": "Contact",
+        "fr": "Contact"
+    }, {
+        "selector": "#bt-confirm-mail",
+        "en": "Get my e-mail",
+        "fr": "Récupérer mon e-mail"
+    }, {
+        "selector": "experiences h2",
+        "en": "Experiences",
+        "fr": "Experiences"
+    }, {
+        "selector": "#title-activity",
+        "en": "Activities",
+        "fr": "Activités"
+    }, {
+        "selector": ".type-work",
+        "en": "Works",
+        "fr": "Travaux"
+    }, {
+        "selector": ".type-studies",
+        "en": "Studies",
+        "fr": "Études"
+    }, {
+        "selector": ".type-type-training-period",
+        "en": "Training period",
+        "fr": "Stage"
+    }, {
+        "selector": ".type-type-training-period-2-months",
+        "en": "Training period (2 months)",
+        "fr": "Stage (2 mois)"
+    }, {
+        "selector": ".languages-tools-title",
+        "en": "Languages & Tools",
+        "fr": "Langages & Outils"
+    }, {
+        "selector": ".pokertimer-title",
+        "en": "PokerTimer",
+        "fr": "PokerTimer"
+    }, {
+        "selector": ".basic-explorer-title",
+        "en": "Function call visualizer",
+        "fr": "Visualiseur d'appel de fonction"
+    }, {
+        "selector": ".erp-universe-title",
+        "en": "ERP on Rocket Universe / SB",
+        "fr": "ERP sur Rocket Universe / SB"
+    }, {
+        "selector": ".erp-java-title",
+        "en": "ERP on Java/JSF",
+        "fr": "ERP sur Java/JSF"
+    }, {
+        "selector": ".erp-angular-title",
+        "en": "ERP on Angular",
+        "fr": "ERP sur Angular"
+    }, {
+        "selector": ".extract-accounting-title",
+        "en": "Extraction data for accounting",
+        "fr": "Extraction des données comptable"
+    }, {
+        "selector": ".sharepoint-title",
+        "en": "Sharepoint website",
+        "fr": "Site internet Sharepoint"
+    }, {
+        "selector": "#curious-quality",
+        "en": "Curious and enthusiastic",
+        "fr": "Curieux et Passionné"
+    }, {
+        "selector": "#team-spirit-quality",
+        "en": "Team spirit",
+        "fr": "Esprit d'équipe"
+    }, {
+        "selector": "#adaptability-quality",
+        "en": "Adaptability",
+        "fr": "Adaptabilité"
+    }, {
+        "selector": "#autonomy-quality",
+        "en": "Autonomy",
+        "fr": "Autonomie"
+    }, {
+        "selector": "#ambitious-quality",
+        "en": "Ambitious",
+        "fr": "Ambitieux"
+    }, {
+        "selector": "#composition-music",
+        "en": "Composition and Musical Mixing",
+        "fr": "Composition et mixage de musiques"
+    }, {
+        "selector": "#natation",
+        "en": "Natation",
+        "fr": "Natation"
+    }, {
+        "selector": "#travel",
+        "en": "Travel",
+        "fr": "Voyages"
+    }, {
+        "selector": "#films",
+        "en": "Films",
+        "fr": "Films"
+    }, {
+        "selector": "#bike",
+        "en": "Bike",
+        "fr": "VTT"
+    }, {
+        "selector": "#skills h2",
+        "en": "Skills",
+        "fr": "Compétences"
+    }, {
+        "selector": ".programming-skills h3",
+        "en": "Programming Skills",
+        "fr": "Compétences en Programmation"
+    }, {
+        "selector": "#bases",
+        "en": "Bases",
+        "fr": "Bases"
+    }, {
+        "selector": "#acquired",
+        "en": "Acquired",
+        "fr": "Acquis"
+    }, {
+        "selector": "#master",
+        "en": "Master",
+        "fr": "Maitrisé"
+    }, {
+        "selector": "#general-skills h4",
+        "en": "General Skills",
+        "fr": "Compétences générales"
+    }, {
+        "selector": "#qualities h4",
+        "en": "Qualities",
+        "fr": "Qualités"
+    }, {
+        "selector": "#hobbies h2",
+        "en": "Other activités and Passions",
+        "fr": "Activités autres et Passions"
+    }
+]
 
 function changeLang(lang) {
-    const htmlSelected = document.querySelector('html')
+    const htmlSelected = document.querySelector('html');
     htmlSelected.attributes.lang.value = lang
 
-    for (const [keySelector, selector] of Object.entries(dataLang['selector'])) {
-        for (const divSelect of document.querySelectorAll(selector)) {
-            divSelect.textContent = dataLang[lang][keySelector];
+    for (const objectSeleted of dataLang) {
+        for(let divSelected of document.querySelectorAll(objectSeleted['selector'])) {
+            divSelected.textContent = objectSeleted[lang];
         }
     };
 }
