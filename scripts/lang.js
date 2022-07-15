@@ -166,6 +166,34 @@ const dataLang = [
         "selector": "#hobbies h2",
         "en": "Other activités and Passions",
         "fr": "Activités autres et Passions"
+    }, {
+        "selector": "#presentation-text",
+        "en": "Welcome to my website where I will present you all my projects, mainly web-oriented developments",
+        "fr": "Bienvenue sur mon site internet dans lequel je vais vous présenter tous mes projets, principalement tourné sur les développements web"
+    }, {
+        "selector" : "#caen-bachelor-period p",
+        "en" : "June 2014 - June 2019",
+        "fr" : "Juin 2014 - Juin 2019"
+    }, {
+        "selector" : "#floreale-holding-period p",
+        "en" : "April 2019 - April 2022",
+        "fr" : "Avril 2019 - Avril 2022"
+    }, {
+        "selector" : "#lomme-bts-period p",
+        "en" : "June 2012 - June 2014",
+        "fr" : "Juin 2012 - Juin 2014"
+    }, {
+        "selector" : "#maison-des-travaux-period p",
+        "en" : "May 2013 - June 2013",
+        "fr" : "Mai 2013 - Juin 2013"
+    }, {
+        "selector" : "#caen-bachelor-name p",
+        "en" : "Bachelor's degree in computer science - Caen",
+        "fr" : "Licence en informatique - Caen"
+    }, {
+        "selector" : "#lomme-bts-name p",
+        "en" : "Bachelor's degree in building - Lomme",
+        "fr" : "BTS en informatique - Lomme"
     }
 ]
 
