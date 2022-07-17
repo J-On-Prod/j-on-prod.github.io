@@ -194,6 +194,34 @@ const dataLang = [
         "selector" : "#lomme-bts-name p",
         "en" : "Bachelor's degree in building - Lomme",
         "fr" : "BTS en informatique - Lomme"
+    }, {
+        "selector" : "#my-projects h3",
+        "en" : "My own Projects",
+        "fr" : "Mes projets personnelles"
+    }, {
+        "selector": "#detail-function-visualizer .project-detail",
+        "en" : "The goal of this project was created a graph who show all call and relation between programs, fields, process in Rocket Universe and SB",
+        "fr" : "Le but de ce projet était de créer et d'afficher un graphe qui contenait toute les relations entre les programmes, les champs, les processes contenu dans Rocket Universe et SB"
+    }, {
+        "selector" : "#detail-erp-angular .project-detail",
+        "en" : "The goal of this project is to modernize the tools by passing it through a web application written under Angular and which passes through a proprietary API (notably on the technical limitations of Rocket Universe and SB)",
+        "fr" : "Ce projet a pour but de moderniser les outils en le passant par une application web écrit sous Angular et qui passe par une API propriétaire (notamment sur les limitations techniques de Rocket Universe et SB)"
+    }, {
+        "selector" : "#detail-erp-java .project-detail",
+        "en" : "The goal of this project was to modernize the tools by switching to a Java/JSF based web application (the project was interrupted due to performance issues with the Rocket Universe Java driver which could take a long time to process SQL queries)",
+        "fr" : "Ce projet avait pour but de moderniser les outils en le passant par une application web basé sur Java/JSF (Le projet fut interrompu par souci de probleme de performance avec le pilote Java de Rocket Universe qui pouvais être long a traiter les requetes SQL)"
+    }, {
+        "selector" : "#detail-rocket .project-detail",
+        "en" : "In the maintenance and modernization of existing programs, I have developed screens and programs (mainly data extractions)",
+        "fr" : "Dans le maintiens et la modernisation des programmes existants, j'ai développer des écrans et des programmes (principalement des extractions de données)"
+    }, {
+        "selector" : "#detail-rocket .project-detail",
+        "en" : "In the maintenance and modernization of existing programs, I have developed screens and programs (mainly data extractions)",
+        "fr" : "Dans le maintiens et la modernisation des programmes existants, j'ai développer des écrans et des programmes (principalement des extractions de données)"
+    }, {
+        "selector" : "#detail-sharepoint .project-detail",
+        "en" : "Creation of an internal website to inform and make documents available to all users and to centralize data instead of going through e-mails",
+        "fr" : "Création d'un site interne pour informer et mettre des documents à la disposition de tous les utilisateurs et d'avantage centraliser les données au lieu de passer par les e-mails"
     }
 ]
 
