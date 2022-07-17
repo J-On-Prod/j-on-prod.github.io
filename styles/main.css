@@ -41,10 +41,18 @@ h4 {
     transition: all 1.5s ease;
 }
 
-.reveal.active-reveal>* {
+.reveal-nav {
+    transform: translateY(-60px);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+
+.reveal.active-reveal>*, .reveal-nav.active-nav {
     transform: translateY(0px);
     opacity: 1;
 }
+
+
 
 /* HEADER */
 
@@ -95,7 +103,7 @@ header, header a {
 /* NAVIGATION */
 
 nav {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     right: 0;

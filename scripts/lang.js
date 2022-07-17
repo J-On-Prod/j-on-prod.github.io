@@ -197,7 +197,7 @@ const dataLang = [
     }, {
         "selector" : "#my-projects h3",
         "en" : "My own Projects",
-        "fr" : "Mes projets personnelles"
+        "fr" : "Mes projets personnels"
     }, {
         "selector": "#detail-function-visualizer .project-detail",
         "en" : "The goal of this project was created a graph who show all call and relation between programs, fields, process in Rocket Universe and SB",
@@ -219,6 +219,10 @@ const dataLang = [
         "en" : "In the maintenance and modernization of existing programs, I have developed screens and programs (mainly data extractions)",
         "fr" : "Dans le maintiens et la modernisation des programmes existants, j'ai développer des écrans et des programmes (principalement des extractions de données)"
     }, {
+        "selector" : "#detail-accounting .project-detail",
+        "en" : "Due to the change of software used by the accounting department, a data extraction and conversion program for the accounting department was needed. I programmed a program in Java to retrieve and format a raw file to import it into the accounting software",
+        "fr" : "Dû au changement de logiciel utilisé par la comptabilité, un programme d'extraction et de conversion de données pour la comptabilité était nécessaire. J'ai programmé un programme sous Java pour récupérer et mettre en forme un fichier brut poru l'importer dans le logiciel de la comptabilité"
+    } ,{
         "selector" : "#detail-sharepoint .project-detail",
         "en" : "Creation of an internal website to inform and make documents available to all users and to centralize data instead of going through e-mails",
         "fr" : "Création d'un site interne pour informer et mettre des documents à la disposition de tous les utilisateurs et d'avantage centraliser les données au lieu de passer par les e-mails"

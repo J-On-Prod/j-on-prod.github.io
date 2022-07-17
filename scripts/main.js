@@ -15,9 +15,9 @@ function showOrHideNavbar() {
     const navbar = document.querySelector('nav');
 
     if (presentationTop < 200) {
-        navbar.style.display = 'flex';
+        navbar.classList.add('active-nav');
     } else {
-        navbar.style.display = 'none';
+        navbar.classList.remove('active-nav');
     }
 }
 
